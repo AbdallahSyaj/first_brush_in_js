@@ -40,3 +40,22 @@ const person5 = {
     age: 25
 };
 console.log(person5["name"]);
+
+//6
+const obj1 = { name: "Adam", age: 25 };
+const obj2 = { gender: "male" };
+const mergedObj = Object.assign({}, obj1, obj2);
+console.log(mergedObj);
+
+//7
+const obj = { name: "Adam", age: 25 };
+Object.freeze(obj);
+obj.age = 26; 
+console.log(obj);
+
+//8
+const obje = { name: "Adam", age: 25 };
+Object.seal(obje);
+obje.age = 26; 
+obje.gender = "male";  
+console.log(obje);
